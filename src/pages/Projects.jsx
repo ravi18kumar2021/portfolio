@@ -36,13 +36,13 @@ export default function Projects() {
         };
     }, [filteredProjects.length, visibleCount]);
     return (
-        <section className="py-16">
+        <section className="py-16 mx-4 sm:mx-0">
             <SectionHeader sectionName={"My Projects"}/>
-            <div className="container mx-auto flex">
+            <div className="container mx-auto md:flex">
                 {/* Sidebar */}
-                <aside className="w-1/4">
+                <aside className="md:w-1/4 mb-4 md:mb-0">
                     <h3 className="text-xl mb-4">Categories</h3>
-                    <ul>
+                    <ul className="flex md:flex-col justify-between">
                         {allCategories.map((category) => (
                             <li key={category}>
                                 <button
@@ -54,9 +54,9 @@ export default function Projects() {
                     </ul>
                 </aside>
                 {/* Project Grid */}
-                <div className="w-3/4">
+                <div className="md:w-3/4">
                     {filteredProjects.length > 0 ? (
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                             {visibleProjects.map((project) => (
                                 <ProjectCard key={project.id} {...project} />
                             ))}
