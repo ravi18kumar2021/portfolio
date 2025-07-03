@@ -1,5 +1,5 @@
-export default function SectionHeader() {
+export default function SectionHeader({ sectionName }) {
   return (
-    <h2 className="text-3xl font-semibold text-center my-10">Section Name</h2>
+    <h2 className="text-3xl container mx-auto font-semibold text-center mb-10 pb-4 border-b">{sectionName}</h2>
   );
 }
