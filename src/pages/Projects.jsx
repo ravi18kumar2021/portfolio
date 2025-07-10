@@ -13,7 +13,7 @@ export default function Projects() {
 
     const filteredProjects = (
         selectedCategory === "All"
-        ? projects
+        ? [...projects].reverse()
         : projects.filter(project => project.category === selectedCategory)
     );
     const visibleProjects = filteredProjects.slice(0, visibleCount);
@@ -38,11 +38,11 @@ export default function Projects() {
     return (
         <section className="py-16 mx-4 sm:mx-0">
             <SectionHeader sectionName={"My Projects"}/>
-            <div className="container mx-auto md:flex">
+            <div className="container mx-auto flex flex-col md:flex-row gap-6">
                 {/* Sidebar */}
-                <aside className="md:w-1/4 mb-4 md:mb-0">
+                <aside className="md:w-1/4 w-full mb-4 md:mb-0">
                     <h3 className="text-xl mb-4">Categories</h3>
-                    <ul className="flex md:flex-col justify-between">
+                    <ul className="flex flex-wrap md:flex-col gap-3 md:gap-1 md:justify-between">
                         {allCategories.map((category) => (
                             <li key={category}>
                                 <button
@@ -54,9 +54,9 @@ export default function Projects() {
                     </ul>
                 </aside>
                 {/* Project Grid */}
-                <div className="md:w-3/4">
+                <div className="md:w-3/4 w-full">
                     {filteredProjects.length > 0 ? (
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {visibleProjects.map((project) => (
                                 <ProjectCard key={project.id} {...project} />
                             ))}
