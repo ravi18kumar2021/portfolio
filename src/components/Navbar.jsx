@@ -1,29 +1,30 @@
 import { NavLink } from "react-router";
+import Logo from "../assets/logo.webp";
 
 export default function Navbar() {
     return (
-        <nav className="bg-pink-900 p-4 shadow">
-            <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-lg md:text-xl font-bold">Ravi Kumar</h1>
+        <nav className="bg-pink-900 py-2 shadow">
+            <div className="sm:container sm:px-0 px-6 mx-auto flex justify-between items-center">
+                <img src={Logo} alt="Ravi Kumar" className="size-16 rounded-full"/>
                 <div className="md:space-x-6 sm:space-x-4 space-x-2 text-sm md:text-lg">
                     <NavLink to="/"
                     className={({isActive}) => (
-                        isActive ? 'text-yello-300' : 'hover:text-yellow-300'
+                        isActive ? 'text-yellow-300' : 'hover:text-yellow-200 transition'
                     )}
                     >Home</NavLink>
                     <NavLink to="/projects"
                     className={({isActive}) => (
-                        isActive ? 'text-yello-300' : 'hover:text-yellow-300'
+                        isActive ? 'text-yellow-300' : 'hover:text-yellow-200 transition'
                     )}
                     >Projects</NavLink>
                     <NavLink to="/about"
                     className={({isActive}) => (
-                        isActive ? 'text-yello-300' : 'hover:text-yellow-300'
+                        isActive ? 'text-yellow-300' : 'hover:text-yellow-200 transition'
                     )}
                     >About</NavLink>
                     <NavLink to="/contact"
                     className={({isActive}) => (
-                        isActive ? 'text-yello-300' : 'hover:text-yellow-300'
+                        isActive ? 'text-yellow-300' : 'hover:text-yellow-200 transition'
                     )}
                     >Contact</NavLink>
                 </div>

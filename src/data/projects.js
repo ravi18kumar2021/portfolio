@@ -267,7 +267,8 @@ export const projects = [
         description: "This app allows users to manage their personal music library by CRUD features.",
         github: "https://github.com/ravi18kumar2021/30DaysOfReact/tree/main/Day30",
         demo: "https://day30-playlist.vercel.app/",
-        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfReact/refs/heads/main/Day30/screenshot1.png"
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfReact/refs/heads/main/Day30/screenshot1.png",
+        featured: true
     },
     {
         id: crypto.randomUUID(),
@@ -294,7 +295,8 @@ export const projects = [
         description: "This Streamlit app helps track the day-wise learning journey.",
         github: "https://github.com/ravi18kumar2021/30DaysOfAI/tree/main/Day01",
         demo: "https://mars-snapshots.streamlit.app/",
-        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day01/screenshot.png"
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day01/screenshot.png",
+        featured: true
     },
     {
         id: crypto.randomUUID(),
@@ -303,6 +305,7 @@ export const projects = [
         description: "This Streamlit app lets you build, tune, and evaluate machine learning classification models directly from a CSV file",
         github: "https://github.com/ravi18kumar2021/caesar-cipher-cracker",
         demo: "https://caesar-cipher-cracker.streamlit.app/",
-        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day02/screenshot1.png"
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day02/screenshot1.png",
+        featured: true
     },
 ];

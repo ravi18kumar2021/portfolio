@@ -5,7 +5,7 @@ export default function ProjectCard({title, description, github, demo, thumbnail
     };
     
     return (
-        <div className="bg-yellow-200 text-gray-800 rounded-md shadow-yellow-200 hover:shadow-lg transition-shadow duration-500 ease-in-out border-2 border-yellow-400 overflow-hidden">
+        <div className="bg-yellow-200 text-gray-800 rounded-md shadow-yellow-200 hover:shadow-md transition-shadow duration-500 ease-in-out border-2 border-yellow-400 overflow-hidden">
             <div className="bg-yellow-400 overflow-hidden">
                 <img src={thumbnail || fallBackThumbnail} alt=""
                     onError={(e) => e.target.src = (fallBackThumbnail)}

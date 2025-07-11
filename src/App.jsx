@@ -9,7 +9,7 @@ import Home from './pages/Home'
 function App() {
 
   return (
-    <div className='bg-gray-800 text-white'>
+    <div className='bg-gray-800 text-white min-h-screen'>
       <Navbar />
       <Outlet />
       <Footer />

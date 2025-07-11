@@ -1,5 +1,5 @@
 export default function SectionHeader({ sectionName }) {
   return (
-    <h2 className="text-3xl container mx-auto font-semibold text-center mb-10 pb-4 border-b">{sectionName}</h2>
+    <h2 className="md:text-3xl text-2xl md:container mx-auto font-semibold text-center mb-6 pb-4 border-b text-violet-500">{sectionName}</h2>
   );
 }
