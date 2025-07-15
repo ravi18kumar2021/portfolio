@@ -1,6 +1,10 @@
 import { useState } from "react"
 import { SiReact, SiPython, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiFlask, SiDjango, SiStreamlit, SiMysql, SiSqlite, SiSqlalchemy, SiNumpy, SiPandas, SiScikitlearn, SiGit, SiGithub } from "react-icons/si";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import DefaultSkill from "../assets/default-skill.svg";
+import MatplotlibIcon from "../assets/matplotlib.svg";
+import SeabornIcon from "../assets/seaborn.svg";
+import VSCodeIcon from "../assets/vs code.svg";
 
 export default function TechCategory({ title, skills }) {
     const iconsMap = {
@@ -21,7 +25,12 @@ export default function TechCategory({ title, skills }) {
         Pandas: <SiPandas />,
         "Scikit-learn": <SiScikitlearn />,
         Git: <SiGit />,
-        GitHub: <SiGithub />
+        GitHub: <SiGithub />,
+    }
+    const imagesMap = {
+        Matplotlib: MatplotlibIcon,
+        Seaborn: SeabornIcon,
+        "VS Code": VSCodeIcon
     }
     const [isOpen, setIsOpen] = useState(false);
     return (
@@ -42,13 +51,9 @@ export default function TechCategory({ title, skills }) {
                                     iconsMap[skill]
                                 ) : (
                                     <img
-                                        src={`src/assets/${skill.toLowerCase()}.svg`}
+                                        src={imagesMap[skill] || DefaultSkill}
                                         alt={skill}
                                         className="size-10 object-contain"
-                                        onError={(e) => {
-                                            e.currentTarget.onerror = null;
-                                            e.currentTarget.src = `src/assets/default-skill.svg`;
-                                        }}
                                     />
                                 )}
                             </div>

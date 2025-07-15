@@ -3,6 +3,8 @@ import MyResume from "../../public/ravi-kumar.pdf";
 import { FaDownload } from "react-icons/fa";
 import SectionHeader from "../components/SectionHeader";
 import { useState } from "react";
+import Preview1 from "../assets/cv-preview.png";
+import Preview2 from "../assets/cv-preview2.png";
 
 export default function About() {
   const [showPreview, setShowPreview] = useState(false);
@@ -60,7 +62,7 @@ export default function About() {
         <div className="relative w-72 mx-auto mb-4 group hover:cursor-pointer"
         onClick={() => setShowPreview(true)}>
           <img
-            src="src/assets/cv-preview2.png"
+            src={Preview2}
             alt="Resume Preview"
             className="rounded-lg shadow-lg transition-opacity duration-300 opacity-50 group-hover:opacity-100 object-center"
           />
@@ -82,7 +84,7 @@ export default function About() {
         &times;
       </button>
       <img
-        src="src/assets/cv-preview.png"
+        src={Preview1}
         alt="CV Full Preview"
         className="max-w-4xl w-full h-auto rounded-lg shadow-lg border border-yellow-500"
       />
