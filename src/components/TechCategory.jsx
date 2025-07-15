@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { SiReact, SiPython, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiFlask, SiDjango, SiStreamlit, SiMysql, SiSqlite, SiSqlalchemy, SiNumpy, SiPandas, SiScikitlearn, SiGit, SiGithub } from "react-icons/si";
-// import Matplotlib from '../assets/matplotlib.svg'
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 export default function TechCategory({ title, skills }) {
     const iconsMap = {
@@ -25,14 +25,18 @@ export default function TechCategory({ title, skills }) {
     }
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-2 border-yellow-500 bg-pink-800 rounded-md mb-4 p-4 text-left">
-            <button onClick={() => setIsOpen(!isOpen)}
-                className="text-lg font-bold italic"
-            >{title} {isOpen ? "➖" : "➕"}</button>
+        <div className="border-2 border-yellow-200 bg-violet-600 rounded-md mb-4 p-4 text-left">
+            <div className="flex justify-between">
+                <button onClick={() => setIsOpen(!isOpen)}
+                    className="text-lg font-bold italic flex-1 text-left"
+                >{title}</button>
+                <button onClick={() => setIsOpen(!isOpen)}
+                    className="text-white text-xl">{isOpen ? <FaMinus/> : <FaPlus />}</button>
+            </div>
             {isOpen && (
                 <div className="grid sm:grid-cols-4 grid-cols-2 gap-3 py-3">
                     {skills.map((skill) => (
-                        <div key={skill} className="bg-blue-800 p-3 flex flex-col items-center justify-center rounded hover:scale-105 transition duration-200">
+                        <div key={skill} className="bg-violet-800 p-3 flex flex-col items-center justify-center rounded hover:scale-105 transition duration-200">
                             <div className="text-4xl mb-2">
                                 {iconsMap[skill] ? (
                                     iconsMap[skill]
@@ -43,7 +47,7 @@ export default function TechCategory({ title, skills }) {
                                         className="size-10 object-contain"
                                         onError={(e) => {
                                             e.currentTarget.onerror = null;
-                                            e.currentTarget.replaceWith(document.createTextNode("🎯"));
+                                            e.currentTarget.src = `src/assets/default-skill.svg`;
                                         }}
                                     />
                                 )}

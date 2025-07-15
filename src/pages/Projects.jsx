@@ -46,7 +46,7 @@ export default function Projects() {
                         {allCategories.map((category) => (
                             <li key={category}>
                                 <button
-                                className={`px-4 py-1 my-1 text-white ${category === selectedCategory ? "bg-red-800" : "bg-violet-800"}`}
+                                className={`px-4 py-1 my-1 text-white ${category === selectedCategory ? "bg-violet-900" : "bg-violet-700"}`}
                                 onClick={() => setSelectedCategory(category)}
                                 >{category}</button>
                             </li>

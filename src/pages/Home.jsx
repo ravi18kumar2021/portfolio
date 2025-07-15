@@ -20,12 +20,12 @@ export default function Home() {
                     <h1 className="lg:text-6xl text-4xl">Hi, I'm <span className="text-yellow-400">Ravi Kumar</span> 👋</h1>
                     <p className="lg:text-3xl md:text-2xl italic">A passionate developer on a mission to craft intuitive and dynamic application.</p>
                     <div className="mt-6 space-x-4">
-                        <Link to="/projects" className="bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-700 lg:text-lg text-md">View Projects</Link>
-                        <Link to="/contact" className="bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-700 lg:text-lg text-md">Contact Me</Link>
+                        <Link to="/projects" className="bg-violet-600 px-4 py-2 rounded text-white hover:bg-violet-700 transition lg:text-lg text-md">View Projects</Link>
+                        <Link to="/contact" className="bg-violet-600 px-4 py-2 rounded text-white hover:bg-violet-700 transition lg:text-lg text-md">Contact Me</Link>
                     </div>
                 </div>
                 <div className="flex items-center justify-center flex-1">
-                    <img src={Mypic} alt="Ravi Kumar" className="rounded-lg border-2 border-yellow-400 hover:scale-105 ease-in-out duration-400 md:w-60 md:h-96 w-44 h-66" />
+                    <img src={Mypic} alt="Ravi Kumar" className="rounded-lg border-2 border-yellow-200 hover:scale-105 ease-in-out duration-400 md:w-60 md:h-96 w-44 h-66" />
                 </div>
             </div>
             <MyBio />
