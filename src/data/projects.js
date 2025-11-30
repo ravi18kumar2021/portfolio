@@ -267,8 +267,7 @@ export const projects = [
         description: "This app allows users to manage their personal music library by CRUD features.",
         github: "https://github.com/ravi18kumar2021/30DaysOfReact/tree/main/Day30",
         demo: "https://day30-playlist.vercel.app/",
-        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfReact/refs/heads/main/Day30/screenshot1.png",
-        featured: true
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfReact/refs/heads/main/Day30/screenshot1.png"
     },
     {
         id: crypto.randomUUID(),
@@ -290,12 +289,12 @@ export const projects = [
     },
     {
         id: crypto.randomUUID(),
-        title: "News Classifier",
+        title: "The News Classifier",
         category: 'Data Science',
         description: "A web-based application that classifies news articles into different categories using various NLP techniques and machine learning models.",
         github: "https://github.com/ravi18kumar2021/news-classifier",
         demo: "https://the-news-classifier.vercel.app/",
-        thumbnail: "https://github.com/ravi18kumar2021/news-classifier/blob/main/frontend/screenshot1.png",
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/news-classifier/refs/heads/main/frontend/screenshot1.png",
         featured: true
     },
     {
