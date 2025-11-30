@@ -290,6 +290,16 @@ export const projects = [
     },
     {
         id: crypto.randomUUID(),
+        title: "News Classifier",
+        category: 'Data Science',
+        description: "A web-based application that classifies news articles into different categories using various NLP techniques and machine learning models.",
+        github: "https://github.com/ravi18kumar2021/news-classifier",
+        demo: "https://the-news-classifier.vercel.app/",
+        thumbnail: "https://github.com/ravi18kumar2021/news-classifier/blob/main/frontend/screenshot1.png",
+        featured: true
+    },
+    {
+        id: crypto.randomUUID(),
         title: "ML Study Tracker App",
         category: 'Data Science',
         description: "This Streamlit app helps track the day-wise learning journey.",
