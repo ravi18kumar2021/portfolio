@@ -289,6 +289,15 @@ export const projects = [
     },
     {
         id: crypto.randomUUID(),
+        title: "World AIDS Day",
+        category: 'Inspirational',
+        description: "A webpage dedicated to raising awareness about World AIDS Day 2025.",
+        github: "https://github.com/ravi18kumar2021/world-aids-day",
+        demo: "https://world-aids-day.vercel.app/",
+        thumbnail: ""
+    },
+    {
+        id: crypto.randomUUID(),
         title: "The News Classifier",
         category: 'Data Science',
         description: "A web-based application that classifies news articles into different categories using various NLP techniques and machine learning models.",
@@ -299,22 +308,42 @@ export const projects = [
     },
     {
         id: crypto.randomUUID(),
-        title: "ML Study Tracker App",
+        title: "Movie Review Sentiment Classifier",
         category: 'Data Science',
-        description: "This Streamlit app helps track the day-wise learning journey.",
-        github: "https://github.com/ravi18kumar2021/30DaysOfAI/tree/main/Day01",
-        demo: "https://mars-snapshots.streamlit.app/",
-        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day01/screenshot.png",
+        description: "This Streamlit app performs sentiment analysis on user-provided text.",
+        github: "https://github.com/ravi18kumar2021/sentiment-classifier",
+        demo: "https://review-classifier.streamlit.app/",
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/sentiment-classifier/refs/heads/main/screenshot.png",
         featured: true
     },
     {
         id: crypto.randomUUID(),
         title: "Classification Model Builder",
         category: 'Data Science',
-        description: "This Streamlit app lets you build, tune, and evaluate machine learning classification models directly from a CSV file",
-        github: "https://github.com/ravi18kumar2021/caesar-cipher-cracker",
-        demo: "https://caesar-cipher-cracker.streamlit.app/",
+        description: "This Streamlit app lets you build, tune and evaluate machine learning classification models directly from a CSV file",
+        github: "https://github.com/ravi18kumar2021/30DaysOfAI/tree/main/Day02",
+        demo: "https://ml-classifier.streamlit.app/",
         thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day02/screenshot1.png",
+        featured: false
+    },
+    {
+        id: crypto.randomUUID(),
+        title: "Tuberculosis Classifier",
+        category: 'Data Science',
+        description: "A simple web app UI for uploading chest X-ray images and classifying tuberculosis cases.",
+        github: "https://github.com/ravi18kumar2021/30DaysOfAI/tree/main/Day02",
+        demo: "https://programming-test-tb-detector.hf.space/",
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/30DaysOfAI/refs/heads/main/Day02/screenshot1.png",
+        featured: false
+    },
+    {
+        id: crypto.randomUUID(),
+        title: "Data Analysis Tool",
+        category: 'Data Science',
+        description: "A simple Streamlit app to upload, explore, clean and visualize CSV data interactively.",
+        github: "https://github.com/ravi18kumar2021/insight-view",
+        demo: "https://insight-view.streamlit.app/",
+        thumbnail: "https://raw.githubusercontent.com/ravi18kumar2021/insight-view/refs/heads/main/screenshot.png",
         featured: true
     },
 ];
